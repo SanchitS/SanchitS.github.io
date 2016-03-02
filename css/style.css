@@ -386,10 +386,11 @@ h1 span {
     border: 0;
 }
 
-.about-us p.title {
+.about-us p.title,
+.about-us p.title2 {
     color: #525252;
     margin: 40px auto;
-    width: 500px;
+    width: 550px;
     line-height: 26px;
     letter-spacing: 0;
     font-size: 18px;
@@ -398,14 +399,6 @@ h1 span {
 }
 
 .about-us p.title2 {
-    color: #525252;
-    margin: 40px auto;
-    width: 500px;
-    line-height: 26px;
-    letter-spacing: 0;
-    font-size: 18px;
-    font-weight: 350;
-    text-align: center;
     margin-bottom: 120px;
 }
 /*
@@ -673,7 +666,7 @@ h1 span {
     clear: both;
 }
 /* Partners */
-
+/*
 .partners {
     position: relative;
     width: 100%;
@@ -732,6 +725,7 @@ h1 span {
 .partners .logo img:hover {
     opacity: 1;
 }
+*/
 /* Contact */
 
 .contact {
