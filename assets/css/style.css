@@ -169,27 +169,20 @@ h6 {
     padding-bottom: 30px;
 }
 
-@media (min-width: 311px) and(max-width: 400px) {
-    #aboutPage .profilePic {
+@media (min-width: 201px) and (max-width: 500px) {
+    .aboutClass .profilePic {
         border-radius: 50%;
-        height: 300px;
-        width: 300px;
+        height: 80% !important;
+        width: 80% !important;
     }
-}
-
-@media (min-width: 261) and(max-width: 310) {
-    #aboutPage .profilePic {
-        border-radius: 50%;
-        height: 250px;
-        width: 250px;
+    body {
+        overflow-x: hidden;
     }
-}
-
-@media (min-width: 201) and(max-width: 360) {
-    #aboutPage .profilePic {
-        border-radius: 50%;
-        height: 190px;
-        width: 190px;
+    #aboutPage .aboutText p {
+        font-size: 100% !important;
+    }
+    #headerwrap h1 {
+        font-size: 300% !important;
     }
 }
 
