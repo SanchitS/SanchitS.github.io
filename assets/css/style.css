@@ -82,7 +82,7 @@ h6 {
 */
 
 .navbar-default .navbar-brand {
-    color: #3f729b;
+    color: #363945;
     /*    color: #1abc9c;*/
 }
 
@@ -92,22 +92,22 @@ h6 {
     border-color: transparent;
     /*    background-color: transparent;*/
     
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #3f729b;
+    color: #363945;
     /*    color: #1abc9c;*/
     
     background-color: transparent;
-    border-bottom: 2px solid #3f729b;
+    border-bottom: 2px solid #363945;
     /*    border-bottom: 2px solid #1abc9c;*/
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #3f729b;
+    color: #484C5B;
     /*    color: #1abc9c;*/
 }
 /* ==========================================================================
@@ -182,7 +182,7 @@ h6 {
         font-size: 100% !important;
     }
     #headerwrap h1 {
-        font-size: 300% !important;
+        font-size: 370% !important;
     }
 }
 
@@ -204,7 +204,7 @@ h6 {
 }
 
 #social i:hover {
-    color: #3f729b;
+    color: #546E7A;
     /*    color: #1abc9c;*/
 }
 
