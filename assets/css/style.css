@@ -358,6 +358,10 @@ h6 {
     opacity: 0;
 }
 
+.portfolioModal5 p {
+    text-align: left !important;
+}
+
 #social {
     padding-top: 50px;
     padding-bottom: 50px;
