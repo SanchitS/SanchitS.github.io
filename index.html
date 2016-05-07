@@ -18,14 +18,6 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -48,7 +40,9 @@
                     </li>
                     <li><a href="#aboutPage">About</a>
                     </li>
-                    <li><a href="#works">Works</a>
+                    <li><a href="#works">Work Experience</a>
+                    </li>
+                    <li><a href="#footerwrap">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -73,19 +67,24 @@
     <! --/headerwrap -->
 
     <! -- about page-->
-    <section id="aboutPage" class="aboutClass">
-        <div class="container">
-            <div class="row centered mt mb">
+    <section id="aboutPage">
+        <div class="container aboutClass">
+            <div class="row centered mt10 mb">
+
+                <h1 style="margin-bottom:30px; color:#8D6E63"><strong>About</strong></h1>
+
 
                 <div class="col-lg-12">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1">
                         <img class="profilePic" src="assets/img/profile.jpg">
                     </div>
-                    <div class="aboutText col-lg-offset-1 col-lg-7">
+                    <div class="aboutText col-lg-6 col-md-6">
                         <!--                        <h2>SANCHIT SHARMA</h2>-->
                         <div class="paragraphs">
-                            <p>I am Sanchit, a passionate, creative individual capable to create graphic solutions for any communicational issue. With experience in web, graphics, UI/UX, visual design, I maintain a healthy balance between functionality and visual impact in all my work. I believe every piece of design can be a work of art.</p>
+                            <p>Hi this is me, Sanchit, a passionate, creative individual capable to create graphic solutions for any communicational issue. With experience in web, graphics, UI/UX, visual design, I maintain a healthy balance between functionality and visual impact in all my work. I believe every piece of design can be a work of art.</p>
                             <p>I love my work and enjoy each new project as I get it. Feel free to have a look at my portfolio and don't hesitate to contact me if you think I can be of service to you.</p>
+                            <a href="assets/pdf/SanchitSharma.pdf" target="_blank" class="btn btn-default">Resume PDF</a>
+                            <a target="_blank" href="https://in.linkedin.com/in/sanchitsh" class="btn btn-default"><i class="fa fa-linkedin-square" aria-hidden="true"> </i> LinkedIn profile</a>
                         </div>
                     </div>
                 </div>
@@ -96,61 +95,136 @@
     </section>
     <! -- /about page-->
 
-    <section id="works">
+    <section id="works" class="mb30">
         <div class="container">
-            <div class="row centered mt mb">
-                <h1>My Portfolio</h1>
+            <div class="row centered mt mb20">
 
-                <div class="col-lg-4 col-md-4 col-sm-4 gallery portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <img src="assets/img/portfolio/folio01.png" class="img-responsive">
-                    </a>
+                <h1 style="margin-bottom:0px; color:#8D6E63"><strong>Work Experience</strong></h1>
+
+
+                <!--                presently working at-->
+                <div class="row valign mt20 col-lg-12 col-md-12 col-sm-12">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 mt10 mb10">
+                        <h4 style="padding-top:70px; color:#795548">Working at :</h4>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 mt10 mb10 gallery">
+                        <a href="#portfolioModal2" target="_blank" class="portfolio-link" data-toggle="modal">
+                            <img src="assets/img/portfolio/careons.png" class="img-responsive">
+                        </a>
+
+                        <strong><b>CareOns</b></strong> | Green Park, Delhi
+                        <br><b style="color:#757575">UI/UX Designer</b>
+                        <br> <i style="color:#9E9E9E">Mar. 2016 - present</i>
+
+                    </div>
                 </div>
-                <!--
-                <div class="col-sm-4 portfolio-item">
-    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-        <div class="caption">
-            <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
+
+                <!--                past working places-->
+                <div class="row valign mt20 col-lg-12 col-md-12 col-sm-12">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 mt10 mb10">
+                        <h4 style="padding-top:70px; color:#795548">Worked at :</h4>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 mt10 mb10 gallery workEx">
+                        <a href="#portfolioModal2" target="_blank" class="portfolio-link" data-toggle="modal">
+                            <img src="assets/img/portfolio/proelp.png" class="img-responsive">
+                        </a>
+
+                        <strong><b>ProElp</b></strong> | Saket, Delhi
+                        <br><b style="color:#757575">Graphics, UI/UX Designer</b>
+                        <br> <i style="color:#9E9E9E">Dec. 2015 - Mar. 2016</i>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 mt10 mb10 gallery workEx">
+                        <a href="#portfolioModal2" target="_blank" class="portfolio-link" data-toggle="modal">
+                            <img src="assets/img/portfolio/gulguncha.png" class="img-responsive">
+                        </a>
+
+                        <strong><b>Gul Guncha Arts</b></strong> | Noida, Delhi
+                        <br><b style="color:#757575">Graphics Designer</b>
+                        <br> <i style="color:#9E9E9E">Dec. 2015 - Apr. 2016</i>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 mt10 mb10 gallery workEx">
+                        <a href="#portfolioModal2" target="_blank" class="portfolio-link" data-toggle="modal">
+                            <img src="assets/img/portfolio/freelancing.png" class="img-responsive">
+                        </a>
+
+                        <strong><b>FREELANCING</b></strong>
+                        <br><b style="color:#757575">Graphics, UI/UX, Web Designer</b>
+                        <br> <i style="color:#9E9E9E">Jan. 2015 - present</i>
+
+                    </div>
+
+                </div>
             </div>
         </div>
-        <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
-    </a>
-</div>
--->
+
+        <div id="projects" class="row centered mt mb">
+            <div class="container mt20 mb20">
+                <h2 style="margin-bottom:10px">UX Projects</h2>
+                <!--                projects-->
+                <div class="row mt10 col-lg-12 col-md-12 col-sm-12">
+                    <div class="col-lg-4 col-md-4 col-sm-4 mt10 mb10 gallery">
+                        <a href="#portfolioModal3" target="_blank" class="portfolio-link" data-toggle="modal">
+                            <img src="assets/img/portfolio/courseall.png" class="img-responsive">
+                        </a>
+
+                        <strong><b>CourseALL</b></strong>
+                        <!--                        <br><b style="color:#757575">UI/UX Designer</b>-->
+                        <br> <i style="color:#757575">An online platform which can recommend the best course of anything available online</i>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 mt10 mb10 gallery">
+                        <a href="#portfolioModal4" target="_blank" class="portfolio-link" data-toggle="modal">
+                            <img src="assets/img/portfolio/letzPlay.png" class="img-responsive">
+                        </a>
+
+                        <strong><b>LetzPlay</b></strong>
+                        <br><i style="color:#757575">An app using which one can get a company to play or learn a particular game or sport.</i>
+                        <!--                        <br> <i style="color:#9E9E9E">Mar. 2016 - present</i>-->
 
 
-                <div class="col-lg-4 col-md-4 col-sm-4 gallery portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <img src="assets/img/portfolio/folio02.png" class="img-responsive">
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 gallery portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <img src="assets/img/portfolio/folio03.png" class="img-responsive">
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 gallery portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <img src="assets/img/portfolio/folio04.png" class="img-responsive">
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 gallery portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <img src="assets/img/portfolio/folio05.png" class="img-responsive">
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 gallery portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <img src="assets/img/portfolio/folio06.png" class="img-responsive">
-                    </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 mt10 mb10 gallery">
+                        <a href="#portfolioModal5" target="_blank" class="portfolio-link" data-toggle="modal">
+                            <img src="assets/img/portfolio/ezbiz.png" class="img-responsive">
+                        </a>
+
+                        <strong><b>EzBiz</b></strong>
+                        <br><i style="color:#757575">A platform which can solve the ambiguity of the flow of communication in small businesses.</i>
+                        <!--                        <br> <i style="color:#9E9E9E">Mar. 2016 - present</i>-->
+
+                    </div>
                 </div>
             </div>
-            <! --/row -->
         </div>
+
+        <div class="row centered mt20 mb20">
+            <h2>Also Mentioned at</h2>
+            <!--                projects-->
+            <div class="row mt10 col-lg-12 col-md-12 col-sm-12">
+                <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 mt10 mb10 gallery">
+                    <a href="https://medium.com/@pranusarna/designing-an-organic-network-for-tutors-students-and-parents-7b8f09ba8d31#.pvbgvb6xj" class="portfolio-link" target="_blank" data-toggle="modal">
+                        <img src="assets/img/portfolio/tyutor.png" class="img-responsive">
+                    </a>
+                    <strong><b>tyutor</b></strong>
+                    <br><i style="color:#757575">An organic network for tutors, students and parents.</i>
+                </div>
+
+            </div>
+        </div>
+        <!--        </div>-->
+        <! --/row -->
     </section>
     <! --/container -->
 
+    <!--
     <div id="social">
         <div class="container">
             <div class="row centered">
@@ -174,375 +248,53 @@
                 </div>
 
             </div>
-            <! --/row -->
         </div>
-        <! --/container -->
+
     </div>
+-->
     <! --/social -->
 
     <div id="footerwrap">
         <div class="container">
             <div class="row centered">
-                <div class="col-lg-4">
-                    <p><b>GRAPHICS, UI/UX DESIGNER</b>
+                <div class="col-lg-6 col-md-6 col-sm-6 mb20">
+                    <p class="mb20">
+                        <h3 style="color:#9E9E9E">You can find me almost everywhere.</h3>
                     </p>
+                    <br>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                        <a target="_blank" href="https://www.behance.net/sanchits"><i class="fa fa-behance fa-2x"></i></a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                        <a target="_blank" href="https://www.facebook.com/sanchit1209"><i class="fa fa-facebook fa-2x"></i></a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                        <a target="_blank" href="https://twitter.com/SanchitSh"><i class="fa fa-twitter fa-2x"></i></a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                        <a target="_blank" href="https://in.linkedin.com/in/sanchitsh"><i class="fa fa-linkedin fa-2x"></i></a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                        <a target="_blank" href="https://www.instagram.com/sanchit.sharma/"><i class="fa fa-instagram fa-2x"></i></a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                        <a target="_blank" href="google.com/+sanchitsharma1"><i class="fa fa-google-plus fa-2x"></i></a>
+                    </div>
+
                 </div>
 
-                <div class="col-lg-4">
-                    <p>+91-9899784408</p>
+                <div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 details">
+                    <h2 style="color:#F5F5F5">Sanchit Sharma</h2>
+                    <h4 style="color:#BDBDBD"><i class="fa fa-phone" style="color:#BDBDBD" aria-hidden="true">  </i>    +91-9899784408</h4>
+                    <h4 style="color:#BDBDBD"><i class="fa fa-envelope-o" style="color:#BDBDBD" aria-hidden="true">  </i>    hi@sanchitsharma.com</h4>
                 </div>
-                <div class="col-lg-4">
-                    <p>sanchit.s@hotmail.com</p>
-                </div>
+
             </div>
         </div>
     </div>
     <! --/footerwrap -->
 
     <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>ProElp</h2>
-                            <hr class="star-primary">
-                            <ul class="list-inline item-details">
-                                <li>
-                                    <strong><a href="http://proelp.com">ProElp.com</a>
-                                    </strong>
-                                </li>
-                                <li style="color:#484C5B;">Dec. 15 - Mar. 16
-                                </li>
-                                <li>
-                                    <strong>Graphics, UI/UX Designer</strong>
-                                </li>
-                            </ul>
-                            <img src="assets/img/proelp/storyBoarding.jpg" class="img-responsive img-centered" alt="">
-                            <p>Along with the large and small logo, made the storyboarding for both
-                                <a href="https://play.google.com/store/apps/details?id=com.impavidus.proelp.proelp_prof&hl=en"> user's</a> and<a href="https://play.google.com/store/apps/details?id=com.impavidus.proelp.proelp_users"> proefessional's</a> app pages for the description of the app and product.</p>
-
-                            <img src="assets/img/proelp/user%20app.jpg" class="img-responsive img-centered" alt="">
-                            <p>This is the first edit for the user's app's design</p>
-
-                            <img src="assets/img/proelp/flyer_brochure2.jpg" class="img-responsive img-centered" alt="">
-                            <p>For the marketing purpose, Flyers and Brochures were required.</p>
-
-                            <img src="assets/img/proelp/Website.jpg" class="img-responsive img-centered" alt="">
-                            <p>After studying the past website, did a research to make a new template and came up with this idea</p>
-
-                            <img src="assets/img/proelp/extra.jpg" class="img-responsive img-centered" alt="">
-                            <p>Other than this I have made and learned to make illustrations, caricatures, video by framing, manipulation and many more</p>
-                            <ul class="list-inline item-details">
-                                <li>Reference : CoFounder of ProElp
-                                    <strong><a href="https://www.linkedin.com/in/varunjindal9?authType=NAME_SEARCH&authToken=5wDp&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A41504135%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1458130146987%2Ctas%3Avarun%20jin">Varun Jindal</a>
-                                    </strong>
-                                </li>
-
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Gul Guncha Arts</h2>
-                            <hr class="star-primary">
-                            <ul class="list-inline item-details">
-                                <li>
-                                    <strong><a href="https://www.facebook.com/GulGunchaArts/?fref=ts">Gul Guncha Arts</a>
-                                    </strong>
-                                </li>
-                                <li style="color:#484C5B;">Dec. 15 - present
-                                </li>
-                                <li>
-                                    <strong>Visual, Graphics Designer</strong>
-                                </li>
-                            </ul>
-                            <img src="assets/img/GGA/GGA_FB.jpg" class="img-responsive img-centered" alt="">
-                            <p>Gul Guncha Arts is a large group famous for being a media production house. It is a collaboration of many ventures like
-                                <a href="https://www.facebook.com/globalschoolofmediacrafting/?fref=pb&hc_location=profile_browser">GSMC</a>,
-                                <a href="https://www.facebook.com/actorunveiled/">Actor Unveiled</a> and many more.</p>
-
-                            <img src="assets/img/GGA/gga.jpg" class="img-responsive img-centered" alt="">
-                            <p>There is an upcoming TV series named "Karmbhoomi", these all visual graphics are related to that</p>
-
-                            <img src="assets/img/GGA/picture.jpg" class="img-responsive img-centered" alt="">
-                            <p>Finally the lovely people with and for I am working.(By the way the posters at the back are also made by me :P)</p>
-
-
-                            <ul class="list-inline item-details">
-                                <li>Reference : Head of GGA
-                                    <strong><a href="https://www.facebook.com/gul.ojaswini?fref=ts">Ojaswini Gul</a>
-                                    </strong>
-                                </li>
-
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Freelance work</h2>
-                            <hr class="star-primary">
-                            <ul class="list-inline item-details">
-                                <!--
-                                <li>
-    <strong><a href="http://proelp.com">ProElp.com</a>
-                                    </strong>
-</li>
--->
-                                <li style="color:#484C5B;">Mar. 15 - present
-                                </li>
-                                <li>
-                                    <strong>Graphics, UI/UX Designer</strong>
-                                </li>
-                            </ul>
-                            <img src="assets/img/freelance/actor.png" class="img-responsive img-centered" alt="">
-                            <p>
-                                <a href="https://www.facebook.com/actorunveiled/">Actor Unveiled</a> logo</p>
-
-                            <img src="assets/img/freelance/gga0.jpg" class="img-responsive img-centered" alt="">
-                            <img src="assets/img/freelance/GGA2.jpg" class="img-responsive img-centered" alt="">
-                            <p><a href="https://www.facebook.com/GulGunchaArts/?fref=ts">GulGunchaArts</a> Logo</p>
-
-                            <img src="assets/img/freelance/gsmc2.jpg" class="img-responsive img-centered" alt="">
-                            <p>Global School of Media Crafting(
-                                <a href="https://www.facebook.com/globalschoolofmediacrafting/?fref=ts">GSMC</a>) Logo </p>
-
-                            <img src="assets/img/freelance/KB.jpg" class="img-responsive img-centered" alt="">
-                            <p>Karmbhoomi Logo</p>
-
-                            <img src="assets/img/freelance/kbu.jpg" class="img-responsive img-centered" alt="">
-                            <p>Karmbhoomi University Logo</p>
-
-                            <img src="assets/img/freelance/kbuCafe.jpg" class="img-responsive img-centered" alt="">
-                            <p>KBU cafe Logo</p>
-
-                            <img src="assets/img/freelance/lotusSpirits.jpg" class="img-responsive img-centered" alt="">
-                            <p>Lotus Spirits Logo</p>
-
-
-                            <!--
-                            <ul class="list-inline item-details">
-    <li>Reference : CoFounder of ProElp
-        <strong><a href="https://www.linkedin.com/in/varunjindal9?authType=NAME_SEARCH&authToken=5wDp&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A41504135%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1458130146987%2Ctas%3Avarun%20jin">Varun Jindal</a>
-                                    </strong>
-    </li>
-
-</ul>
--->
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>TYUTOR</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <p>Case study will be added soon</p>
-                            <!--
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
--->
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="modal-body">
-                            <h2>CourseAll</h2>
-                            <hr class="star-primary">
-
-                            <p>
-                                <h3><u>I. STRATEGY</u></h3>
-                                <p><b><strong>OBJECTIVE -</strong></b> To prepare an online platform (for now, a web solution) which can recommend the best course of anything available online. And using this any user can search, select and start the course without wasting time hunting for the best solution on the web.</p>
-                                <div class="row"><img class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2" src="assets/img/courseall/courseALL.jpg" class="img-responsive img-centered" alt="">
-                                </div>
-                                <p><b><strong>BUSINESS NEEDS -</strong></b> A website, efficiently made and also fast enough with a good UX so that a person can choose a course from the options available or by searching directly and comparing with other similar courses available online on different websites. These courses will be displayed in the order of recommendations and one can easily sort it and also filter out and opt whichever course he find useful . </p>
-                                <p><b><strong>USER NEEDS -</strong></b> I am also a user and I have been through this phase many times. it is really very difficult to choose a particular course amongst thousands of others available which are claiming to be the best and comprised with best sources and instructor. It is really a time taking and a frustrating task to choose one out of many options when you want to learn something through the web. if it has some fees or requires payment then the user become skeptic about it's worth and costs more time looking for the answers for his questions before making any payment. So to alter and narrow down this time taking window, the user can reach the end where he can get the best available options and select one amongst many efficiently and can go further and proceed to learn without any second wasting.</p>
-                            </p>
-                            <p>
-                                <h3><u> II. SCOPE</u></h3>
-                                <p><b><strong>TECHNICAL REQUIREMENTS -</strong></b> A Website with a name related to courses(CourseALL, this is what we are calling it now). This can be made using HTML, CSS and JS for the frontend and for that I have an amazing friend, Keshav Dhawan onboard who has a brilliant knowledge in the frontend area and for the backend, a database, and JS will be required. </p>
-                                <p><b><strong>CONTENT REQUIREMENTS -</strong></b> This is the biggest hurdle actually as it is very much difficult to judge a course and rank it as number 1 or rate it as the best when there are other contenders too. Practially, there is no way by which we can take one name in hand and yell it as the most awesome course of a particular thing. But there can be factors on the basis of which this judgement can be done. It can be ratings on the particular website, ratings on other websites, popularity on the particular website and popularity on other sites, author or instructor's popularity on social media sites, ratings of the course on the site and on other blogs. There are many blogs available on the web which talk about the courses and also on the other side they talk about their own course but instead of picking the course we can pick rating and reviews form thier own site and other sites. To gather the content is the most challenging step but for now, we want to focus on the most recommended courses and we will gather the information available online on most popular websites and blogs like medium, quora etc. </p>
-                                <p><b><strong> MoSCoW - </strong></b>
-                                    <i>Must -</i> For now the primary task is to sort out many options and to chose top 5 recommended courses(based on price, popularity, ease of access and many more factors) and to put it in front of the world and especially the needy user so that without wasting time he can navigate to the site and start learning. </p>
-                                <p><i>Should</i> - If we will have time then we will integrate the ratings and reviews available of that course so that we and that course card can gain more trust of the user and user will feel sure to jump to the site.</p>
-                                <p><i> Could - </i>Presently it is necessary to provide the basic solution on the basis of which one can take decision easily so, for now, there will be only 5 choices but later we will iterate it in scaling up and adding more data so oriented so that the percentage of surity of whether the most recommended course is really the best or not will increase. </p>
-                                <p><i>Would - </i>For a better UX, the next step will be to provide the comparing option between the similar type of courses. As if a guy wants to compare two similar courses available for the learning of AngularJS framework then the user can easily compare the two courses and can judge better as which one to opt(these judging factors will include the description, difficulty level, price or fees, duration, assignments, certification, instructor's profile and many more elements).</p>
-                            </p>
-                            <p>
-                                <h3><u>III. STRUCTURE</u></h3>
-                                <p>
-                                    <div class="row">
-                                        <img class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2" src="assets/img/courseall/flow.jpg" class="img-responsive img-centered" alt="">
-
-                                    </div>
-                                    <div class="row">
-                                        <img class="col-lg-4 col-md-4 col-sm-4 col-xs-6" src="assets/img/courseall/desrciption1.jpg" class="img-responsive img-centered" alt="">
-                                        <img class="col-lg-4 col-md-4 col-sm-4 col-xs-6" src="assets/img/courseall/desrciption2.jpg" class="img-responsive img-centered" alt="">
-                                        <img class="col-lg-4 col-md-4 col-sm-4 col-xs-6" src="assets/img/courseall/desrciption3.jpg" class="img-responsive img-centered" alt="">
-                                    </div>
-
-
-                                </p>
-                                <p>
-                                    <h3><u>IV. SKELETON</u></h3>
-                                    <p>
-                                        <div class="row">
-                                            <img class="col-lg-4 col-md-4 col-sm-4 col-xs-6" src="assets/img/courseall/homePageIdea.jpg" class="img-responsive img-centered" alt="">
-                                            <div class="col-lg-8 col-md-8 col-sm-8  col-xs-6">
-                                                <p>For a better UX, the next step will be to provide the comparing option between the similar type of courses. As if a guy wants to compare two similar courses available for the learning of AngularJS framework then the user can easily compare the two courses and can judge better as which one to opt(these judging factors will include the description, difficulty level, price or fees, duration, assignments, certification, instructor's profile and many more elements).</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <img class="col-lg-4 col-md-4 col-sm-4  col-xs-6" src="assets/img/courseall/homePage.jpg" class="img-responsive img-centered" alt="">
-                                            <img class="col-lg-4 col-md-4 col-sm-4  col-xs-6" src="assets/img/courseall/searchResult.jpg" class="img-responsive img-centered" alt="">
-                                            <img class="col-lg-4 col-md-4 col-sm-4  col-xs-6" src="assets/img/courseall/courseDesrciption.jpg" class="img-responsive img-centered" alt="">
-                                        </div>
-
-
-                                    </p>
-
-
-                                </p>
-
-                                <!--
-                            <ul class="list-inline item-details">
-    <li>Client:
-        <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-    </li>
-    <li>Date:
-        <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-    </li>
-    <li>Service:
-        <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-    </li>
-</ul>
--->
-                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>EzBiz</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Case Study will be added soon.</p>
-                            <!--
-                            <ul class="list-inline item-details">
-    <li>Client:
-        <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-    </li>
-    <li>Date:
-        <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-    </li>
-    <li>Service:
-        <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-    </li>
-</ul>
--->
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
