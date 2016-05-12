@@ -1,28 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-::-moz-selection {
-    background: #f2c2c9;
-    color: #a4003a;
-    text-shadow: none;
-}
-
-::selection {
-    background: #16a085;
-    color: #a4003a;
-    text-shadow: none;
-}
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:500|Roboto:400,300,100,500);
 .centered {
     text-align: center
 }
@@ -32,7 +8,7 @@ hr {
 }
 
 .mb {
-    margin-bottom: 50px;
+    margin-bottom: 50px !important;
 }
 
 .mt10 {
@@ -58,17 +34,97 @@ hr {
 .mb30 {
     margin-bottom: 30px;
 }
+
+.mt100 {
+    margin-top: 100px;
+}
+
+.mb100 {
+    margin-bottom: 100px !important;
+}
+
+.roboto100 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.roboto300 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.roboto400 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.roboto500 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.fontAleg {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 500;
+}
+
+.valign {
+    vertical-align: middle !important;
+}
+
+.col-xs-4 {
+    padding-bottom: 15px !important;
+}
+
+button {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    padding: 16px 30px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    appearance: none;
+    box-shadow: none;
+    border-radius: 0;
+    color: #fff !important;
+}
+
+button:focus {
+    outline: none
+}
+
+section.press button {
+    color: #fff;
+    background-color: #303F9F;
+    border: none;
+    opacity: 0.9;
+}
+
+section.press button:hover,
+section.press button.hover {
+    opacity: 0.6;
+}
+
+section.press button:active,
+section.press button.active {
+    background-color: #417cb8;
+    box-shadow: 0 5px #27496d;
+    transform: translateY(5px);
+}
 /* ==========================================================================
    General styles
    ========================================================================== */
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
+    background: #ECA345;
 }
 
 h1,
@@ -77,36 +133,50 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 300;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 500;
     color: #4a4a4a;
 }
-/*
-.navbar-brand {
-    font-weight: 600;
-    font-size: 22px !important;
-}
-*/
-/*
+
 .navbar-right {
-    font-weight: 400;
-    font-size: 20px !important;
-}
-*/
-
-.valign {
-    vertical-align: middle !important;
+    /*    font-weight: 400;*/
+    
+    font-size: 14px !important;
 }
 
-.halign {
-    : middle !important;
+.mainFileNavbar .navbar-default .navbar-brand {
+    color: #fff;
+    font-size: 30px !important;
 }
 
-.navbar-default .navbar-brand {
-    color: #363945;
+.mainFileNavbar .navbar-default {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: -70px;
+    border-color: transparent;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.mainFileNavbar .navbar-default .navbar-nav > .active > a,
+.mainFileNavbar .navbar-default .navbar-nav > .active > a:hover,
+.mainFileNavbar .navbar-default .navbar-nav > .active > a:focus {
+    color: #ccc;
+    background-color: transparent;
+    /*    border-bottom: 2px solid #363945;*/
+}
+
+.mainFileNavbar .navbar-default .navbar-nav > li > a {
+    color: #fff;
+    font-size: 1.4em !important;
+}
+/**/
+
+.otherNavbar .navbar-default .navbar-brand {
+    color: #ccc;
     /*    color: #1abc9c;*/
 }
 
-.navbar-default {
+.otherNavbar .navbar-default {
     padding-top: 5px;
     padding-bottom: 5px;
     border-color: transparent;
@@ -115,9 +185,9 @@ h6 {
     background-color: rgba(255, 255, 255, 1);
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.otherNavbar .navbar-default .navbar-nav > .active > a,
+.otherNavbar .navbar-default .navbar-nav > .active > a:hover,
+.otherNavbar .navbar-default .navbar-nav > .active > a:focus {
     color: #363945;
     /*    color: #1abc9c;*/
     
@@ -126,7 +196,7 @@ h6 {
     /*    border-bottom: 2px solid #1abc9c;*/
 }
 
-.navbar-default .navbar-nav > li > a {
+.otherNavbar .navbar-default .navbar-nav > li > a {
     color: #484C5B;
     /*    color: #1abc9c;*/
 }
@@ -134,151 +204,69 @@ h6 {
    Wrap Sections
    ========================================================================== */
 
+.fixed-bg {
+    background-image: url(../img/back3.jpg);
+    min-height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #headerwrap {
-    background: url(../img/back.jpg) no-repeat center;
-    margin-top: 60px;
     padding-top: 200px;
     text-align: center;
-    background-attachment: relative;
-    background-position: center center;
-    min-height: 600px;
-    width: 100%;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    /*    box-shadow: 0px -3px 10px #888888;*/
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
 }
 
 #headerwrap h1 {
     color: #ffffff;
-    padding-top: 15px;
-    padding-bottom: 25px;
-    letter-spacing: 4px;
-    font-size: 70px;
-    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    /*    letter-spacing: -4px;*/
+    
+    font-size: 65px;
+    font-weight: 500;
 }
 
 #headerwrap h4 {
-    font-weight: 400;
-    color: #ffffff
+    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 35px;
 }
 
-#aboutPage .profilePic {
-    border-radius: 50%;
-    height: 300px;
-    width: 300px;
+#headerwrap .press {
+    margin-top: 50px;
 }
 
-#aboutPage {
-    background: #ffffff;
-    /*    box-shadow: 0px -3px 10px #B8B8B8;*/
+#workSection {
+    background: #f7f7f7;
+    min-height: 700px;
+    box-shadow: 20px #B8B8B8;
+    box-shadow: 0px 0px 20px #777777;
 }
 
-.aboutClass {
-    margin-bottom: 40px;
-    padding-top: 40px;
+#workSection .press {
+    /*    margin-top: 400px !important;*/
 }
 
-#aboutPage .paragraphs {
-    margin-top: 15px;
+.fixed-bg2 {
+    background-image: url(../img/back4.jpg);
+    min-height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#aboutPage .aboutText p {
-    font-size: 16px !important;
-    font-weight: 100;
+#footerwrap {
+    padding-top: 30px;
     padding-bottom: 30px;
-}
-
-@media (min-width: 201px) and (max-width: 500px) {
-    #aboutPage .profilePic {
-        border-radius: 50%;
-        height: 70% !important;
-        width: 70% !important;
-    }
-    body {
-        overflow-x: hidden;
-    }
-    #aboutPage .aboutText p {
-        font-size: 100% !important;
-    }
-    #headerwrap h1 {
-        font-size: 370% !important;
-    }
-    #footerwrap .details {
-        padding-top: 30px;
-    }
-}
-
-#works {
-    background: #fafafa;
-    /*    box-shadow: 0px -3px 10px #B8B8B8;*/
-}
-
-#projects {
-    background: #ffffff;
-    /*    box-shadow: 0px -3px 10px #B8B8B8;*/
-}
-
-@media(min-width:767px) {
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
-    }
-}
-
-.btn-outline {
-    margin-top: 15px;
-    border: solid 2px #fff;
-    font-size: 20px;
-    color: #fff;
-    background: 0 0;
-    transition: all .3s ease-in-out;
-}
-
-.btn-outline:hover,
-.btn-outline:focus,
-.btn-outline:active,
-.btn-outline.active {
-    border: solid 2px #fff;
-    color: #18bc9c;
-    background: #fff;
-}
-
-.btn:focus,
-.btn:active,
-.btn.active {
-    outline: 0;
-}
-
-.scroll-top {
-    z-index: 1049;
-    position: fixed;
-    right: 2%;
-    bottom: 2%;
-    width: 50px;
-    height: 50px;
-}
-
-.scroll-top .btn {
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    font-size: 20px;
-    line-height: 28px;
-}
-
-.scroll-top .btn:focus {
-    outline: 0;
-}
-
-#social {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: #D6D6D6;
+    background-color: #E8EAF6;
+    box-shadow: 0px 0px 20px #777777;
     /*    box-shadow: 0px -3px 10px #B8B8B8;*/
 }
 
@@ -289,15 +277,9 @@ h6 {
 }
 
 #footerwrap i:hover {
-    color: #E0E0E0;
-    /*    color: #1abc9c;*/
-}
-
-#footerwrap {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #2f2f2f;
-    /*    box-shadow: 0px -3px 10px #B8B8B8;*/
+    /*    color: #E0E0E0;*/
+    
+    color: #fff;
 }
 
 #footerwrap p {
@@ -305,60 +287,11 @@ h6 {
     /*    margin-left: 10px;*/
 }
 
-.col-xs-4 {
-    padding-bottom: 15px !important;
-}
-
-#workwrap {
-    background: url(../img/work.jpg) no-repeat center top;
-    margin-top: -70px;
-    padding-top: 250px;
-    text-align: center;
-    background-attachment: relative;
-    background-position: center center;
-    min-height: 650px;
-    width: 100%;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#workwrap h1 {
-    color: #ffffff;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    letter-spacing: 4px;
-    font-size: 80px;
-    font-weight: bold;
-}
-
-#workwrap h4 {
-    font-weight: 400;
-    color: #ffffff
-}
-
-#aboutwrap {
-    background: url(../img/about.jpg) no-repeat center top;
-    margin-top: -70px;
-    padding-top: 250px;
-    text-align: center;
-    background-attachment: relative;
-    background-position: center center;
-    min-height: 550px;
-    width: 100%;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+#social {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #D6D6D6;
+    /*    box-shadow: 0px -3px 10px #B8B8B8;*/
 }
 
 .gallery img {
@@ -367,4 +300,96 @@ h6 {
 
 .gallery img:hover {
     opacity: 0.5;
+}
+
+#navcontainer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+#navcontainer ul li {
+    display: inline;
+    padding: 0.7em 0.7em;
+    margin: 0.2em 0.2em;
+}
+
+#navcontainer ul li a {
+    text-decoration: none;
+    /*    padding: .5em 0.5em;*/
+    
+    color: #fff;
+}
+/*
+#navcontainer ul li a:hover {
+    color: #fff;
+}
+*/
+/*
+#navcontainer ul #behance:hover {
+    background-color: #131418;
+    color: #fff;
+}
+
+#navcontainer ul #facebook:hover {
+    background-color: #3b5999;
+    color: #fff;
+}
+
+#navcontainer ul #twitter:hover {
+    background-color: #55acee;
+    color: #fff;
+}
+
+#navcontainer ul #linkedin:hover {
+    background-color: #0077B5;
+    color: #fff;
+}
+
+#navcontainer ul #instagram:hover {
+    background-color: #3f729b;
+    color: #fff;
+}*/
+
+@media (min-width: 201px) and (max-width: 500px) {
+    body {
+        overflow-x: hidden;
+    }
+    #headerwrap h1 {
+        font-size: 300% !important;
+    }
+    #headerwrap h4 {
+        font-size: 130% !important;
+    }
+    #headerwrap .press {
+        margin-top: 100px;
+    }
+    .press button {
+        font-size: 16px !important;
+    }
+    #workSection {
+        min-height: 1600px;
+    }
+    #footerwrap .details {
+        padding-top: 30px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+    body {
+        overflow-x: hidden;
+    }
+    #headerwrap h1 {
+        font-size: 350% !important;
+    }
+    #headerwrap h4 {
+        font-size: 170% !important;
+    }
+}
+
+@media (min-width: 501px) {
+    body {
+        overflow-x: hidden;
+    }
 }
