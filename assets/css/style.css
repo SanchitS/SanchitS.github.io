@@ -2,6 +2,105 @@
 .centered {
     text-align: center
 }
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-x: hidden;
+    /*    background: #ECA345;*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+.navbar-right {
+    /*    font-weight: 400;*/
+    
+    font-size: 14px !important;
+}
+
+.mainFileNavbar .navbar-default .navbar-brand {
+    color: #fff;
+    font-size: 30px !important;
+}
+
+.mainFileNavbar .navbar-default {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: -70px;
+    border-color: transparent;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.mainFileNavbar .navbar-default .navbar-nav > .active > a,
+.mainFileNavbar .navbar-default .navbar-nav > .active > a:hover,
+.mainFileNavbar .navbar-default .navbar-nav > .active > a:focus {
+    color: #ccc;
+    background-color: transparent;
+    /*    border-bottom: 2px solid #363945;*/
+}
+
+.mainFileNavbar .navbar-default .navbar-nav > li > a {
+    color: #fff;
+    font-size: 1.4em !important;
+}
+/**/
+
+.otherNavbar .navbar-default .navbar-brand {
+    color: #2196F3;
+    font-size: 30px !important;
+}
+
+.otherNavbar .navbar-default {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-height: 80px;
+    border-color: transparent;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.otherNavbar .navbar-default .navbar-nav a,
+.otherNavbar .navbar-default .navbar-nav a:hover,
+.otherNavbar .navbar-default .navbar-nav a:focus {
+    color: #2196F3;
+    background-color: transparent;
+}
+
+.otherNavbar .navbar-default .navbar-nav .active {
+    color: #2196F3;
+    /*    font-size: 1.5em !important;*/
+    
+    background-color: transparent;
+    border-bottom: 2px solid #2196F3;
+}
+
+.otherNavbar .navbar-default .navbar-nav > li > a {
+    color: #484C5B;
+    font-size: 1.4em !important;
+    /*    color: #1abc9c;*/
+}
+/* ==========================================================================
+  ***********************------------universal
+   ========================================================================== */
 
 .mt {
     margin-top: 50px;
@@ -226,97 +325,6 @@ section.pressSm button.active {
 
 .card-shadow {
     box-shadow: 0px 10px 5px #fa45ba;
-}
-/* ==========================================================================
-   General styles
-   ========================================================================== */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
-    overflow-x: hidden;
-    /*    background: #ECA345;*/
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-weight: 500;
-    color: #4a4a4a;
-}
-
-.navbar-right {
-    /*    font-weight: 400;*/
-    
-    font-size: 14px !important;
-}
-
-.mainFileNavbar .navbar-default .navbar-brand {
-    color: #fff;
-    font-size: 30px !important;
-}
-
-.mainFileNavbar .navbar-default {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-bottom: -70px;
-    border-color: transparent;
-    background-color: rgba(255, 255, 255, 0);
-}
-
-.mainFileNavbar .navbar-default .navbar-nav > .active > a,
-.mainFileNavbar .navbar-default .navbar-nav > .active > a:hover,
-.mainFileNavbar .navbar-default .navbar-nav > .active > a:focus {
-    color: #ccc;
-    background-color: transparent;
-    /*    border-bottom: 2px solid #363945;*/
-}
-
-.mainFileNavbar .navbar-default .navbar-nav > li > a {
-    color: #fff;
-    font-size: 1.4em !important;
-}
-/**/
-
-.otherNavbar .navbar-default .navbar-brand {
-    color: #2196F3;
-    font-size: 30px !important;
-}
-
-.otherNavbar .navbar-default {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    min-height: 80px;
-    border-color: transparent;
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.otherNavbar .navbar-default .navbar-nav a,
-.otherNavbar .navbar-default .navbar-nav a:hover,
-.otherNavbar .navbar-default .navbar-nav a:focus {
-    color: #2196F3;
-    background-color: transparent;
-}
-
-.otherNavbar .navbar-default .navbar-nav .active {
-    color: #2196F3;
-    /*    font-size: 1.5em !important;*/
-    
-    background-color: transparent;
-    border-bottom: 2px solid #2196F3;
-}
-
-.otherNavbar .navbar-default .navbar-nav > li > a {
-    color: #484C5B;
-    font-size: 1.4em !important;
-    /*    color: #1abc9c;*/
 }
 /* ==========================================================================
   ***********************------------MAINPAGE
