@@ -143,7 +143,7 @@ section.press button.active {
     line-height: 1.2;
     appearance: none;
     box-shadow: none;
-    border-radius: 0;
+    border-radius: 3px;
     color: #333 !important;
 }
 
@@ -167,6 +167,40 @@ section.press2 button.active {
     box-shadow: 0 5px #27496d;
     transform: translateY(5px);
 }
+/********pressSm*/
+
+.pressSm button {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    appearance: none;
+    box-shadow: none;
+    border-radius: 2px;
+    color: #fff !important;
+}
+
+section.pressSm button {
+    color: #fff;
+    background-color: #2196F3;
+    border: none;
+    opacity: 0.9;
+}
+
+section.pressSm button:hover,
+section.pressSm button.hover {
+    opacity: 0.6;
+}
+
+section.pressSm button:active,
+section.pressSm button.active {
+    background-color: #64B5F6;
+    transform: translateY(5px);
+}
 /*****************************************TEXT*/
 
 .bigWord1 {
@@ -177,6 +211,10 @@ section.press2 button.active {
     font-size: 26px;
 }
 
+.bigWord3 {
+    font-size: 22px;
+}
+
 .regulartext {
     font-size: 18px;
     color: #455A64;
@@ -184,6 +222,10 @@ section.press2 button.active {
 
 .linkText {
     color: #1E88E5;
+}
+
+.card-shadow {
+    box-shadow: 0px 10px 5px #fa45ba;
 }
 /* ==========================================================================
    General styles
@@ -512,6 +554,9 @@ h6 {
         border-radius: 125px;
         margin-top: 70px;
     }
+    #workwrap .work-img {
+        padding-top: 20px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -522,6 +567,10 @@ h6 {
         width: 250px;
         border-radius: 125px;
         margin-top: 70px;
+    }
+    .namelinks {
+        text-align: center;
+        margin-bottom: 40px;
     }
 }
 
@@ -534,6 +583,10 @@ h6 {
         border-radius: 100px;
         margin-top: -10px !important;
     }
+    .namelinks {
+        text-align: center;
+        margin-bottom: 40px;
+    }
     .regulartext {
         font-size: 15px;
         color: #455A64;
@@ -543,5 +596,12 @@ h6 {
     }
     .bigWord2 {
         font-size: 22px;
+    }
+    #workwrap .work-img {
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 90%;
     }
 }
