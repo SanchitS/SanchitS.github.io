@@ -70,12 +70,13 @@ h6 {
 
 .mainFileNavbar .navbar-collapse {
     /*    z-index: 1045 !important;*/
+    /*    position: absolute;*/
 }
 
 .mainFileNavbar .navbar-collapse.in {
     overflow-y: auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-    z-index: 999 !important;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    z-index: 1050 !important;
     /*    position: sticky;*/
 }
 
@@ -378,6 +379,7 @@ section.pressSm button.active {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 1 !important;
 }
 
 #headerwrap {
@@ -385,7 +387,6 @@ section.pressSm button.active {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.1em;
-    z-index: 1 !important;
 }
 
 #headerwrap h1 {
@@ -397,6 +398,7 @@ section.pressSm button.active {
     
     font-size: 65px;
     font-weight: 500;
+    z-index: 5 !important;
 }
 
 #headerwrap h4 {
@@ -404,6 +406,7 @@ section.pressSm button.active {
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
     font-size: 35px;
+    z-index: 5 !important;
 }
 
 #headerwrap .press {
@@ -431,6 +434,7 @@ section.pressSm button.active {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 1 !important;
 }
 
 #footerwrapMain {
@@ -625,6 +629,9 @@ section.pressSm button.active {
     }
     .bigWord2 {
         font-size: 22px;
+    }
+    .bigWord3 {
+        font-size: 17px;
     }
     #workwrap .work-img {
         text-align: center;
