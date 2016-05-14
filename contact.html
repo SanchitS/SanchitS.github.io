@@ -1,3 +1,5 @@
+<!--<?php if (isset($_POST[ "submit"])) { $name=$ _POST[ 'name']; $email=$ _POST[ 'email']; $message=$ _POST[ 'message']; $human=i ntval($_POST[ 'human']); $from='Demo Contact Form' ; $to='example@domain.com' ; $subject='Message from Contact Demo ' ; $body="From: $name\n E-Mail: $email\n Message:\n $message" ; // Check if name has been entered if (!$_POST[ 'name']) { $errName='Please enter your name' ; } // Check if email has been entered and is valid if (!$_POST[ 'email'] || !filter_var($_POST[ 'email'], FILTER_VALIDATE_EMAIL)) { $errEmail='Please enter a valid email address' ; } //Check if message has been entered if (!$_POST[ 'message']) { $errMessage='Please enter your message' ; } // If there are no errors, send the email if (!$errName && !$errEmail && !$errMessage && !$errHuman) { if (mail ($to, $subject, $body, $from)) { $result='<div class="alert alert-success">Thank You! I will be in touch</div>' ; } else { $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>' ; } } } ?>-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +11,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favico.ico">
 
-    <title>Sanchit Sharma | UX/UI Dsigner</title>
+    <title>Sanchit Sharma | UX/UI Designer</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -35,7 +37,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand centered" href="index.html">SANCHIT SHARMA<p class="roboto400"style="font-size:15px;color:#484C5B;letter-spacing:0.4px;margin-top:5px">
+                    <a class="navbar-brand centered" href="index.html">SANCHIT SHARMA<p class="regulartext roboto300"style="font-size:15px;color:#90A4AE;letter-spacing:0.6px;margin-top:5px">
                         UX/UI Designer
                     </p></a>
                 </div>
@@ -54,78 +56,115 @@
         </div>
     </div>
 
-    <div id="aboutwrap">
+    <div id="contactwrap">
         <div class="container">
-            <div class="fleft row">
-                <h1 class="mb">ABOUT</h1>
-                <div class="col-lg-12">
-                    <div class="centered col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <img class="profilePic" src="assets/img/profile.jpg">
-                    </div>
-                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                        <h2 class="roboto500">SANCHIT SHARMA</h2>
-                        <div class="aboutButtons mt10 mb30">
-                            <section class="press2">
-                                <a href="assets/pdf/SanchitSharma.pdf" target="_blank">
-                                    <button>Resume</button>
-                                </a>
-                            </section>
-                            <section class="press2">
-                                <a href="https://in.linkedin.com/in/sanchitsh" target="_blank">
-                                    <button>LinkedIn Profile</button>
-                                </a>
-                            </section>
-                        </div>
-                        <div class="aboutFirstText regulartext roboto300">
-                            <p>I am a User Experience (UX) Designer, Researcher, and creative problem-solver. With experience in web, graphics, UI/UX, visual design, I maintain a healthy balance between functionality and visual impact in all my work. I believe every piece of design can be a work of art.</p>
-                            <p><span class="bigWord2">My mission :</span> to provide the thoughtful UX Design to the people that instead of scratching head they can use the product without losing smile from the face.</p>
-                            <p>And yeah also to work with Elon Musk :P</p>
-                        </div>
-                    </div>
+
+            <div class="row mt">
+                <h1 style="margin-top:70px;letter-spacing:2px; font-size:50px;" class="centered">Get In Touch</h1> </div>
+
+            <div class="">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <p class="roboto300 bigWord3 mt">Feel free to contact me with work inquiries, collaborations, speaking requests, general questions, or just to say hello.</p>
+                    <p class="roboto300 bigWord3 mt20">
+                        For important discussion, you can call or mail me directly.
+                    </p>
+                    <p class="roboto500 bigWord3 mt20">
+                        +91-9899784408
+                    </p>
+                    <p class="roboto500 bigWord3 mt20">
+                        sanchitsharma1209@gmail.com
+                    </p>
                 </div>
             </div>
 
+            <div class="">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <!--                        <h1 class="page-header text-center">Contact Form Example</h1>-->
+                    <form class="form-horizontal" role="form" method="post" action="index.php">
+                        <div class="form-group mt">
+                            <label for="name" class="col-xs-12 bigWord3 roboto300" style="color:#757575">Name</label>
+                            <br>
+                            <div class="col-xs-12">
 
-            <div class="row roboto300 regulartext">
-                <div class="col-lg-8 col-lg-offset-2 aboutMission">
-                    <div class="mt mb">
-                        <p><span class="bigWord2">My mission :</span> to provide the thoughtful UX Design to the people that instead of scratching head they can use the product without losing smile from the face.</p>
-                        <p>And yeah also to work with Elon Musk :P</p>
-                    </div>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name">
+                                <!--                                    <?php echo "<p class='text-danger'>$errName</p>";?>-->
 
+                            </div>
+                        </div>
+                        <div class="form-group mt30">
+                            <label for="email" class="col-xs-12 bigWord3 roboto300" style="color:#757575">Email Address</label>
+                            <br>
+                            <div class="col-xs-12">
+
+                                <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com">
+                                <!--                                    <?php echo "<p class='text-danger'>$errEmail</p>";?>-->
+
+                            </div>
+                        </div>
+                        <div class="form-group mt30">
+                            <label for="message" class="col-xs-12 bigWord3 roboto300" style="color:#757575">Message</label>
+                            <br>
+                            <div class="col-xs-12">
+                                <textarea class="form-control" rows="4" name="message" placeholder="Enter your message."></textarea>
+                                <!--                                    <?php echo "<p class='text-danger'>$errMessage</p>";?>-->
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12 mt30">
+                                <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10 col-sm-offset-2">
+                                <!--                                    <?php echo $result; ?>-->
+                            </div>
+                        </div>
+                    </form>
+
+
+                    <!--
+                           <form class="form-horizontal" role="form" method="post" action="index.php">
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+            <?php echo "<p class='text-danger'>$errName</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+            <?php echo "<p class='text-danger'>$errEmail</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="message" class="col-sm-2 control-label">Message</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" rows="4" name="message">
+                <?php echo htmlspecialchars($_POST[ 'message']);?>
+            </textarea>
+            <?php echo "<p class='text-danger'>$errMessage</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <?php echo $result; ?>
+        </div>
+    </div>
+</form>
+-->
                 </div>
 
-                <div class="col-lg-12 mb">
-                    <p class="bigWord1">How I work
-                    </p>
-                    <p>
-
-                        <p>After reading and getting inspired by the book <span class="roboto500">"Elements of User Experience"</span> by <i>Jesse James Garrett</i>, I often apply the 5 fundamentals of UX defined in the book in the projects.</p>
-                        <p>you will find these fundamentals properly defined and elaborated in almost every project in the <a class="linkText roboto400" href="work.html">WORK</a> section. </p>
-                        <p>For the <span class="roboto500">Strategy</span>, I love to collaborate with the clients, customers, people and end users for the Objectives, Business Needs, User needs and user research by brainstorming, talking to and learning from the users and working closely with my team. </p>
-                        <p>Next step is for <span class="roboto500">Scope</span> where I look for all type of requirements in the project like technical, content and etc. and prioritizing the work on the basis of MoSCoW(Must, Should, Could, Would). </p>
-                        <p>After getting it done I go for the <span class="roboto500">Structure</span> where I build the concrete, mapping workflows, conceptual models, information architecture, language and diagrams type of stuff.</p>
-                        <p>When structure gets ready and gets verified from the business end me and my team run the clock for preparing the <span class="roboto500">Skeleton</span> by making the blueprints, Interface designs, Navigation, low+high fidelity wireframes.</p>
-                        <p> Now the Structure is ready, the final step is to prepare the interfaces, layouts, pixel perfect design components, in short <span class="roboto500">Surface</span> of the product.</p>
-                    </p>
-                </div>
-
-                <div class="col-lg-12 mb">
-                    <p class="bigWord1">MY INTERESTS
-                    </p>
-                    <p>
-
-                        <p>I love learning. To that end, many of my interests involve learning or, relatedly experiencing new things. Travelling is a great example. Since 2013, I went on over two dozen places because I love traveling and seeing new places. I love eating at a place I have never eaten at - in fact I tend to avoid places that I've already been once.</p>
-                        <!--                      <p>you will find these fundamentals properly defined and elaborated in almost every project in the <a class="linkText roboto400" href="work.html">WORK</a> section. </p>-->
-                        <p>In my spare time, when I’m not working you can find me hiking, hanging out with awesome people, gymming, running, playing volleyball or cricket, watching TV series or Cricket or reading a book.</p>
-                        <p>I love my work and enjoy each new project as I get it. Feel free to have a look at my WORK and CONTACT me if you think I can be of service to you.</p>
-
-                    </p>
-                </div>
             </div>
         </div>
-        <!-- /container -->
     </div>
+
 
 
 
