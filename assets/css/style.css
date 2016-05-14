@@ -33,22 +33,51 @@ h6 {
 }
 
 .navbar-right {
-    /*    font-weight: 400;*/
-    
     font-size: 14px !important;
 }
 
+.mainFileNavbar {
+    z-index: 10 !important;
+}
+
+.mainFileNavbar .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff !important;
+}
+
 .mainFileNavbar .navbar-default .navbar-brand {
-    color: #fff;
+    color: #fff !important;
     font-size: 30px !important;
+}
+
+.mainFileNavbar .navbar-collapse ul li {
+    /*
+.mainFileNavbar .navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+*/
+    
+    z-index: 1050 !important;
+}
+
+.mainFileNavbar .navbar-collapse {
+    /*    z-index: 1045 !important;*/
+}
+
+.mainFileNavbar .navbar-collapse.in {
+    overflow-y: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    z-index: 999 !important;
+    /*    position: sticky;*/
 }
 
 .mainFileNavbar .navbar-default {
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-bottom: -70px;
     border-color: transparent;
     background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .mainFileNavbar .navbar-default .navbar-nav > .active > a,
@@ -331,7 +360,9 @@ section.pressSm button.active {
    ========================================================================== */
 
 .fixed-bg {
-    background-image: url(../img/back3.jpg);
+    /*    background-image: url(../img/back3.jpg);*/
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/back3.jpg');
     min-height: 700px;
     background-attachment: fixed;
     background-position: center;
@@ -344,6 +375,7 @@ section.pressSm button.active {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.1em;
+    z-index: 1 !important;
 }
 
 #headerwrap h1 {
@@ -371,8 +403,9 @@ section.pressSm button.active {
 #workSection {
     background: #f7f7f7;
     min-height: 700px;
-    box-shadow: 20px #B8B8B8;
-    box-shadow: 0px 0px 20px #777777;
+    /*
+    box-shadow: 20px #B8B8B8;box-shadow: 0px 0px 20px #777777;
+*/
 }
 
 #workSection .press {
@@ -380,7 +413,9 @@ section.pressSm button.active {
 }
 
 .fixed-bg2 {
-    background-image: url(../img/back4.jpg);
+    /*    background-image: url(../img/back4.jpg);*/
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/back4.jpg');
     min-height: 700px;
     background-attachment: fixed;
     background-position: center;
@@ -391,8 +426,10 @@ section.pressSm button.active {
 #footerwrapMain {
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #E8EAF6;
-    box-shadow: 0px 0px 20px #777777;
+    /*    background-color: #E8EAF6;*/
+    
+    background: linear-gradient(rgba(247, 247, 247, 1), rgba(232, 234, 246, 1)), url('../img/back4.jpg');
+    /*    box-shadow: 0px 0px 20px #777777;*/
 }
 
 #footerwrapMain i {
@@ -437,6 +474,12 @@ section.pressSm button.active {
 
 .gallery img:hover {
     opacity: 0.5;
+}
+
+.mainpage-img img {
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
 }
 
 #navcontainer ul {
@@ -510,31 +553,78 @@ section.pressSm button.active {
 ***************************************************************************************
 */
 
-@media (min-width: 201px) and (max-width: 500px) {
+@media (min-width: 201px) and (max-width: 767px) {
     body {
         overflow-x: hidden;
     }
+    #headerwrap {
+        padding-top: 100px !important;
+        min-height: 400px !important;
+        /*    .    position: absolute !important;*/
+    }
     #headerwrap h1 {
-        font-size: 300% !important;
+        font-size: 40px !important;
     }
     #headerwrap h4 {
-        font-size: 130% !important;
+        font-size: 25px !important;
     }
     #headerwrap .press {
-        margin-top: 100px;
+        margin-top: 50px;
+    }
+    .fixed-bg,
+    .fixed-bg2 {
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .fixed-bg {
+        background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/back3.jpg');
+        background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/back3.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/back3.jpg');
+    }
+    .fixed-bg2 {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/back4.jpg');
     }
     .press button {
         font-size: 14px !important;
         padding: 12px 24px;
     }
     #workSection {
-        min-height: 1600px;
+        /*        min-height: 1600px;*/
     }
     #footerwrap .details {
         padding-top: 30px;
     }
+    #aboutwrap .profilePic {
+        width: 200px;
+        border-radius: 100px;
+        margin-top: -10px !important;
+    }
+    .namelinks {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .regulartext {
+        font-size: 15px;
+        color: #455A64;
+    }
+    .bigWord1 {
+        font-size: 27px;
+    }
+    .bigWord2 {
+        font-size: 22px;
+    }
+    #workwrap .work-img {
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin: auto;
+        /*        width: 90%;*/
+    }
 }
-
+/*
 @media (min-width: 501px) and (max-width: 700px) {
     body {
         overflow-x: hidden;
@@ -546,12 +636,14 @@ section.pressSm button.active {
         font-size: 170% !important;
     }
 }
-
+*/
+/*
 @media (min-width: 501px) {
     body {
         overflow-x: hidden;
     }
 }
+*/
 
 @media (min-width: 992px) and (max-width: 1200px) {
     body {
@@ -582,34 +674,4 @@ section.pressSm button.active {
     }
 }
 
-@media (max-width: 767px) {
-    body {
-        overflow-x: hidden;
-    }
-    #aboutwrap .profilePic {
-        width: 200px;
-        border-radius: 100px;
-        margin-top: -10px !important;
-    }
-    .namelinks {
-        text-align: center;
-        margin-bottom: 40px;
-    }
-    .regulartext {
-        font-size: 15px;
-        color: #455A64;
-    }
-    .bigWord1 {
-        font-size: 27px;
-    }
-    .bigWord2 {
-        font-size: 22px;
-    }
-    #workwrap .work-img {
-        text-align: center;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 90%;
-    }
-}
+@media (max-width: 767px) {}
