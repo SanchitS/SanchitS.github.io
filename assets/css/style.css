@@ -648,6 +648,11 @@ section.pressSm button.active {
         right: 0;
         margin: auto;
     }
+    #navcontainer ul li {
+        display: inline;
+        padding: 0.5em 0.5em;
+        margin: 0.2em 0.2em;
+    }
 }
 /*
 @media (min-width: 501px) and (max-width: 700px) {
