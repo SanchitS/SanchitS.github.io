@@ -356,8 +356,9 @@ section.pressSm button.active {
 
 .regulartext {
     font-size: 18px;
-    color: #3D3D3D;
-    /*    color: #455A64;*/
+    /*    color: #3D3D3D;*/
+    
+    color: #455A64;
 }
 
 .linkText {
@@ -640,6 +641,12 @@ section.pressSm button.active {
         right: 0;
         margin: auto;
         /*        width: 90%;*/
+    }
+    #footerwrap {
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 }
 /*
