@@ -356,7 +356,8 @@ section.pressSm button.active {
 
 .regulartext {
     font-size: 18px;
-    color: #455A64;
+    color: #3D3D3D;
+    /*    color: #455A64;*/
 }
 
 .linkText {
