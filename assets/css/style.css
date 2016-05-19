@@ -303,7 +303,7 @@ section.press2 button.hover {
 section.press2 button:active,
 section.press2 button.active {
     background-color: #417cb8;
-    box-shadow: 0 5px #27496d;
+/*    box-shadow: 0 5px #27496d;*/
     transform: translateY(5px);
 }
 /********pressSm*/
