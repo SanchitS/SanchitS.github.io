@@ -75,7 +75,7 @@ h6 {
 
 .mainFileNavbar .navbar-collapse.in {
     overflow-y: auto;
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    background: rgba(0, 0, 0, 0.7);
     z-index: 1050 !important;
     /*    position: sticky;*/
 }
@@ -303,7 +303,8 @@ section.press2 button.hover {
 section.press2 button:active,
 section.press2 button.active {
     background-color: #417cb8;
-/*    box-shadow: 0 5px #27496d;*/
+    /*    box-shadow: 0 5px #27496d;*/
+    
     transform: translateY(5px);
 }
 /********pressSm*/
@@ -389,6 +390,10 @@ section.pressSm button.active {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.1em;
+}
+
+#headerwrap .introText {
+    position: static;
 }
 
 #headerwrap h1 {
@@ -626,7 +631,6 @@ section.pressSm button.active {
         font-size: 15px;
         color: #455A64;
     }
-    
     .bigWord1 {
         font-size: 27px;
     }
