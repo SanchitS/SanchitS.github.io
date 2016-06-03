@@ -2,6 +2,8 @@
 .centered {
     text-align: center
 }
+
+
 /* ==========================================================================
    General styles
    ========================================================================== */
@@ -64,7 +66,6 @@ h6 {
 .mainFileNavbar .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
 */
-    
     z-index: 1050 !important;
 }
 
@@ -103,6 +104,8 @@ h6 {
     color: #fff;
     font-size: 1.4em !important;
 }
+
+
 /**/
 
 .otherNavbar .navbar-default .navbar-brand {
@@ -128,7 +131,6 @@ h6 {
 .otherNavbar .navbar-default .navbar-nav .active {
     color: #2196F3;
     /*    font-size: 1.5em !important;*/
-    
     background-color: transparent;
     border-bottom: 2px solid #2196F3;
 }
@@ -138,6 +140,8 @@ h6 {
     font-size: 1.4em !important;
     /*    color: #1abc9c;*/
 }
+
+
 /* ==========================================================================
   ***********************------------universal
    ========================================================================== */
@@ -266,9 +270,10 @@ section.press button:active,
 section.press button.active {
     background-color: #64B5F6;
     /*    box-shadow: 0 5px #27496d;*/
-    
     transform: translateY(5px);
 }
+
+
 /********press2*/
 
 .press2 button {
@@ -304,9 +309,10 @@ section.press2 button:active,
 section.press2 button.active {
     background-color: #417cb8;
     /*    box-shadow: 0 5px #27496d;*/
-    
     transform: translateY(5px);
 }
+
+
 /********pressSm*/
 
 .pressSm button {
@@ -341,6 +347,8 @@ section.pressSm button.active {
     background-color: #64B5F6;
     transform: translateY(5px);
 }
+
+
 /*****************************************TEXT*/
 
 .bigWord1 {
@@ -358,7 +366,6 @@ section.pressSm button.active {
 .regulartext {
     font-size: 18px;
     /*    color: #3D3D3D;*/
-    
     color: #455A64;
 }
 
@@ -369,14 +376,15 @@ section.pressSm button.active {
 .card-shadow {
     box-shadow: 0px 10px 5px #fa45ba;
 }
+
+
 /* ==========================================================================
   ***********************------------MAINPAGE
    ========================================================================== */
 
 .fixed-bg {
     /*    background-image: url(../img/back3.jpg);*/
-    
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/back3.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/back3.jpg');
     min-height: 700px;
     background-attachment: fixed;
     background-position: center;
@@ -402,7 +410,6 @@ section.pressSm button.active {
     padding-top: 0px;
     padding-bottom: 10px;
     /*    letter-spacing: -4px;*/
-    
     font-size: 65px;
     font-weight: 500;
     z-index: 5 !important;
@@ -434,8 +441,9 @@ section.pressSm button.active {
 
 .fixed-bg2 {
     /*    background-image: url(../img/back4.jpg);*/
-    
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/back4.jpg');
+    /*    background: linear-gradient(rgba(100, 181, 246, 0.3), rgba(100, 181, 246, 0.3)), url('../img/back4.jpg');*/
+    /*    background: linear-gradient(rgba(13, 71, 161, 0.2), rgba(13, 71, 161, 0.2)), url('../img/back4.jpg');*/
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/back4.jpg');
     min-height: 700px;
     background-attachment: fixed;
     background-position: center;
@@ -448,8 +456,8 @@ section.pressSm button.active {
     padding-top: 30px;
     padding-bottom: 30px;
     /*    background-color: #E8EAF6;*/
-    
-    background: linear-gradient(rgba(247, 247, 247, 1), rgba(232, 234, 246, 1)), url('../img/back4.jpg');
+    background: linear-gradient(rgba(247, 247, 247, 1), rgba(232, 234, 246, 1));
+    /*    background: linear-gradient(rgba(247, 247, 247, 1), rgba(232, 234, 246, 1)), url('../img/back4.jpg');*/
     /*    box-shadow: 0px 0px 20px #777777;*/
 }
 
@@ -457,8 +465,24 @@ section.pressSm button.active {
     color: #757575;
 }
 
-#footerwrapMain i:hover {
-    color: #fff;
+#footerwrapMain #behance i:hover {
+    color: #131418;
+}
+
+#footerwrapMain #facebook i:hover {
+    color: #3b5999;
+}
+
+#footerwrapMain #twitter i:hover {
+    color: #55acee;
+}
+
+#footerwrapMain #likedin i:hover {
+    color: #0077B5;
+}
+
+#footerwrapMain #instagram i:hover {
+    color: #e95950;
 }
 
 #footerwrapMain p {
@@ -474,9 +498,32 @@ section.pressSm button.active {
     color: #757575;
 }
 
+#footerwrap #behance i:hover {
+    color: #131418;
+}
+
+#footerwrap #facebook i:hover {
+    color: #3b5999;
+}
+
+#footerwrap #twitter i:hover {
+    color: #55acee;
+}
+
+#footerwrap #likedin i:hover {
+    color: #0077B5;
+}
+
+#footerwrap #instagram i:hover {
+    color: #e95950;
+}
+
+
+/*
 #footerwrap i:hover {
     color: #90CAF9;
 }
+*/
 
 #footerwrap p {
     color: #f2f2f2;
@@ -519,14 +566,17 @@ section.pressSm button.active {
 #navcontainer ul li a {
     text-decoration: none;
     /*    padding: .5em 0.5em;*/
-    
     color: #fff;
 }
+
+
 /*
 #navcontainer ul li a:hover {
     color: #fff;
 }
 */
+
+
 /*
 #navcontainer ul #behance:hover {
     background-color: #131418;
@@ -552,6 +602,8 @@ section.pressSm button.active {
     background-color: #3f729b;
     color: #fff;
 }*/
+
+
 /*
 ***************************************************************************************
 *******************************************ABOUT PAGE
@@ -568,6 +620,8 @@ section.pressSm button.active {
 .aboutButtons section {
     display: inline-block;
 }
+
+
 /*
 ***************************************************************************************
 *******************************************MEDIA QUERIES
@@ -659,6 +713,8 @@ section.pressSm button.active {
         margin: 0.2em 0.2em;
     }
 }
+
+
 /*
 @media (min-width: 501px) and (max-width: 700px) {
     body {
@@ -672,6 +728,8 @@ section.pressSm button.active {
     }
 }
 */
+
+
 /*
 @media (min-width: 501px) {
     body {
