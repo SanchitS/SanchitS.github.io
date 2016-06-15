@@ -17,6 +17,8 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/remodal-default-theme.css" rel="stylesheet">
+    <link href="assets/css/remodal.css" rel="stylesheet">
 
 </head>
 
@@ -54,7 +56,7 @@
         </div>
     </div>
 
-    <div id="workwrap">
+    <div id="workwrap" class="remodal-bg">
         <div class="container">
 
             <div class="row mb mt">
@@ -190,7 +192,7 @@
                         </div>
 
                         <div class="col-lg-4 col-md-4 col-sm-4 mt10 mb10 gallery">
-                            <a href="work/letzplay.html">
+                            <a href="#letzplay">
                                 <img src="assets/img/portfolio/letzPlay.png" class="img-responsive work-img">
                             </a>
 
@@ -201,8 +203,9 @@
 
                         </div>
 
+
                         <div class="col-lg-4 col-md-4 col-sm-4 mt10 mb10 gallery">
-                            <a href="work/ezbiz.html">
+                            <a href="#ezbiz">
                                 <img src="assets/img/portfolio/ezbiz.png" class="img-responsive work-img">
                             </a>
 
@@ -239,7 +242,34 @@
 
     </div>
 
+    <div class="remodal" data-remodal-id="letzplay">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <h1>LetZPlay</h1>
+        <p>
+            Case Study will be added soon. Till then have a look at how I spend my last semester working as a UI/UX Designer at CareOns and know what were the challenges and how I tackled them.
+        </p>
+        <br>
+        <section class="pressSm">
+            <a href="work/careons.html">
+                <button>Experience at CareOns</button>
+            </a>
+        </section>
 
+    </div>
+
+    <div class="remodal" data-remodal-id="ezbiz">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <h1>EzBiz</h1>
+        <p>
+            Case Study will be added soon.Till then have a look at how I spend my last semester working as a UI/UX Designer at CareOns and know what were the challenges and how I tackled them.
+        </p>
+        <br>
+        <section class="pressSm">
+            <a href="work/careons.html">
+                <button>Experience at CareOns</button>
+            </a>
+        </section>
+    </div>
 
 
     <div id="footerwrap">
@@ -290,6 +320,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/style.js"></script>
+    <script src="assets/js/remodal.js"></script>
 
 
 </body>
