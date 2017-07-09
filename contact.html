@@ -1,5 +1,3 @@
-<!--<?php if (isset($_POST[ "submit"])) { $name=$ _POST[ 'name']; $email=$ _POST[ 'email']; $message=$ _POST[ 'message']; $human=i ntval($_POST[ 'human']); $from='Demo Contact Form' ; $to='example@domain.com' ; $subject='Message from Contact Demo ' ; $body="From: $name\n E-Mail: $email\n Message:\n $message" ; // Check if name has been entered if (!$_POST[ 'name']) { $errName='Please enter your name' ; } // Check if email has been entered and is valid if (!$_POST[ 'email'] || !filter_var($_POST[ 'email'], FILTER_VALIDATE_EMAIL)) { $errEmail='Please enter a valid email address' ; } //Check if message has been entered if (!$_POST[ 'message']) { $errMessage='Please enter your message' ; } // If there are no errors, send the email if (!$errName && !$errEmail && !$errMessage && !$errHuman) { if (mail ($to, $subject, $body, $from)) { $result='<div class="alert alert-success">Thank You! I will be in touch</div>' ; } else { $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>' ; } } } ?>-->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,6 +17,7 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -63,8 +62,9 @@
                 <h1 style="margin-top:70px;letter-spacing:2px; font-size:50px;" class="centered">Get In Touch</h1> </div>
 
             <div class="centered">
-                <div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-12">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
                     <p class="roboto300 bigWord3 mt">Feel free to contact me with work inquiries, collaborations, speaking requests, general questions, or just to say hello.</p>
+<!--
                     <p class="roboto300 bigWord3 mt20">
                         For important discussion, you can call or mail me directly.
                     </p>
@@ -74,21 +74,24 @@
                     <p class="roboto500 bigWord3 mt20">
                         sanchitsharma1209@gmail.com
                     </p>
+-->
                 </div>
             </div>
 
-            <!--
+        
            <div class="">
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <h1 class="page-header text-center">Contact Form Example</h1>
-        <form class="form-horizontal" role="form" method="post" action="index.php">
+    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+<!--        <h1 class="page-header text-center">Contact Me</h1>-->
+        <form id="contact-form" class="contact-form form-horizontal" action="https://formspree.io/sanchitsharma1209@gmail.com" method="post" data-success="Message successfully sent!">
             <div class="form-group mt">
                 <label for="name" class="col-xs-12 bigWord3 roboto300" style="color:#757575">Name</label>
                 <br>
                 <div class="col-xs-12">
 
-                    <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name">
-                    <?php echo "<p class='text-danger'>$errName</p>";?>
+                    <input id="name" type="text" name="name" class="form-control field" placeholder="First & Last Name" required autofocus >
+                   
+
+
 
                 </div>
             </div>
@@ -97,8 +100,8 @@
                 <br>
                 <div class="col-xs-12">
 
-                    <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com">
-                    <?php echo "<p class='text-danger'>$errEmail</p>";?>
+                    <input type="email" class="form-control field" id="email" name="email" placeholder="example@domain.com" required>
+                    
 
                 </div>
             </div>
@@ -106,10 +109,33 @@
                 <label for="message" class="col-xs-12 bigWord3 roboto300" style="color:#757575">Message</label>
                 <br>
                 <div class="col-xs-12">
-                    <textarea class="form-control" rows="4" name="message" placeholder="Enter your message."></textarea>
-                    <?php echo "<p class='text-danger'>$errMessage</p>";?>
+                    <textarea class="form-control" id="message" rows="4" name="message" placeholder="Enter your message." required></textarea>
+                   
                 </div>
             </div>
+            
+<!--
+                    <label for="recaptcha_response_field">Captcha</label>
+            <div id="recaptcha_widget" class="recaptcha">
+    <div class="image">
+      <div id="recaptcha_image"></div>
+    </div>
+
+    <div class="headline recaptcha_only_if_image">Enter the words above:</div>
+    <div class="headline recaptcha_only_if_audio">Enter the numbers you hear:</div>
+
+    <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" required />
+
+    <span class="recaptcha_icon"><a href="javascript:Recaptcha.reload()"><i class="fa fa-refresh"></i></a></span>
+    <span class="recaptcha_icon recaptcha_only_if_image"><a href="javascript:Recaptcha.switch_type('audio')"><i class="fa fa-volume-up"></i></a></span>
+    <span class="recaptcha_icon recaptcha_only_if_audio"><a href="javascript:Recaptcha.switch_type('image')"><i class="fa fa-font"></i></a></span>
+    <span class="recaptcha_icon"><a href="javascript:Recaptcha.showhelp()"><i class="fa fa-question-circle"></i></a></span>
+  </div><br/>
+  <div id="notice" class="notice" data-captcha-failed="Incorrect captcha!" data-error="There was an error sending the message, please try again."></div>
+  
+-->
+            
+            
             <div class="form-group">
                 <div class="col-xs-12 mt30">
                     <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
@@ -117,18 +143,23 @@
             </div>
             <div class="form-group">
                 <div class="col-sm-10 col-sm-offset-2">
-                    <?php echo $result; ?>
+                   
                 </div>
             </div>
+
         </form>
+
 
 
     </div>
 
 </div>
--->
+
+     
+                </div>
+
         </div>
-    </div>
+    
 
 
 
@@ -150,15 +181,15 @@
                             </li>
 
                             <li id="facebook">
-                                <a target="_blank" href="https://www.facebook.com/sanchit1209"><i class="fa fa-facebook fa-1x"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/sanshizm"><i class="fa fa-facebook fa-1x"></i></a>
                             </li>
 
                             <li id="twitter">
-                                <a target="_blank" href="https://twitter.com/SanchitSh"><i class="fa fa-twitter fa-1x"></i></a>
+                                <a target="_blank" href="https://twitter.com/sanshizm"><i class="fa fa-twitter fa-1x"></i></a>
                             </li>
 
                             <li id="likedin">
-                                <a target="_blank" href="https://in.linkedin.com/in/sanchitsh"><i class="fa fa-linkedin fa-1x"></i></a>
+                                <a target="_blank" href="https://in.linkedin.com/in/sanshizm"><i class="fa fa-linkedin fa-1x"></i></a>
                             </li>
 
                             <li id="instagram">
@@ -184,9 +215,12 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+    <script type="text/javascript" src="heroku_form/function.js"</script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/style.js"></script>
-<script>
+        
+    <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -195,7 +229,7 @@
   ga('create', 'UA-101988963-1', 'auto');
   ga('send', 'pageview');
 
-</script>
+    </script>
 
 </body>
 
