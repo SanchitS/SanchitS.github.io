@@ -20,8 +20,11 @@ h1{
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-image: url(/assets/img/BG_img3.png);
-  background-repeat: no-repeat;
+  background-image: url(/assets/img/BG_img4.png);
+    background-position: center center;
+background-repeat:  no-repeat;
+background-attachment: fixed;
+background-size:  cover;
 /*    background-size: cover;*/
 /*    background: rgba(255, 255, 255,0.1);*/
   text-align:center;
@@ -36,7 +39,8 @@ body {
 /*    max-width: 1024px;*/
 /*    margin: auto;*/
     text-align: center;
-    margin-top: 100px;
+    margin-top: 70px;
+    margin-bottom: 60px;
     vertical-align: middle;
     
 }
@@ -77,7 +81,7 @@ span {
   text-align:center;
 }
 
-.twitterfollow{margin-bottom: 40px;}
+/*.twitterfollow{margin-bottom: 40px;}*/
 /*
 
 #banner-load{
@@ -103,3 +107,17 @@ span {
 @-moz-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
 @-o-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
 @keyframes fade-in{0%{opacity:0} 100%{opacity:1}}*/
+
+
+
+
+
+/*
+***************************************************************************************
+*******************************************MEDIA QUERIES
+***************************************************************************************
+*/
+@media (min-width: 201px) and (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+    }
