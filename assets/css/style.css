@@ -34,7 +34,7 @@ body {
 /*    max-width: 1024px;*/
 /*    margin: auto;*/
     text-align: center;
-    margin-top: 100px;
+    margin-top: 80px;
     vertical-align: middle;
     
 }
@@ -67,8 +67,8 @@ span {
 
 #days, #hours, #minutes, #seconds
  {
-  font-size: 42px;
-  margin: 20px 15px;
+  font-size: 40px;
+  margin: 20px 10px;
   font-weight: 400;
   color:#252832;
   opacity: 0.8;
