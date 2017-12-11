@@ -11,77 +11,82 @@ h6 {
     font-weight: 700;
     color: #252832;
 }
-h1{
+
+h1 {
     font-size: 32px;
     margin-top: 25px;
     margin-bottom: 40px;
-    opacity:0.8;
+    opacity: 0.8;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-image: url(/assets/img/BG_img4.png);
+    font-family: 'Poppins', sans-serif;
+    background-image: url(/assets/img/BG_img4.png);
     background-position: center center;
-background-repeat:  no-repeat;
-background-attachment: fixed;
-background-size:  cover;
-/*    background-size: cover;*/
-/*    background: rgba(255, 255, 255,0.1);*/
-  text-align:center;
-  color: #252832;
-  font-weight: 100;
-  font-size: 18px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /*    background-size: cover;*/
+    /*    background: rgba(255, 255, 255,0.1);*/
+    text-align: center;
+    color: #252832;
+    font-weight: 100;
+    font-size: 18px;
 }
 
-.container
-{
-/*    width: 50%;*/
-/*    max-width: 1024px;*/
-/*    margin: auto;*/
+.container {
+    /*    width: 50%;*/
+    /*    max-width: 1024px;*/
+    /*    margin: auto;*/
     text-align: center;
     margin-top: 70px;
     margin-bottom: 60px;
     vertical-align: middle;
-    
+
 }
 
 
 
-.mainIcon{
+.mainIcon {
     width: 120px;
     height: 120px;
 }
-p{
+
+p {
     font-size: 18px;
     opacity: 0.8;
     margin: 15px 0;
 }
+
 div {
-  display: inline-block;
-  line-height: 1.3;
-/*  padding: 0px;*/
+    display: inline-block;
+    line-height: 1.3;
+    /*  padding: 0px;*/
 }
 
 span {
-  display: block;
-  font-size: 14px;
-  font-weight: 300;
-  color:#252832;
-  opacity:0.5;
-  margin-top: 6px;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    color: #252832;
+    opacity: 0.5;
+    margin-top: 6px;
 }
 
-#days, #hours, #minutes, #seconds
- {
-  font-size: 40px;
-  margin: 20px 10px;
-  font-weight: 400;
-  color:#252832;
-  opacity: 0.8;
-  text-align:center;
+#days,
+#hours,
+#minutes,
+#seconds {
+    font-size: 40px;
+    margin: 20px 10px;
+    font-weight: 400;
+    color: #252832;
+    opacity: 0.8;
+    text-align: center;
 }
 
 /*.twitterfollow{margin-bottom: 40px;}*/
+
 /*
 
 #banner-load{
@@ -108,15 +113,67 @@ span {
 @-o-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
 @keyframes fade-in{0%{opacity:0} 100%{opacity:1}}*/
 
-
-
-
-
 /*
 ***************************************************************************************
 *******************************************MEDIA QUERIES
 ***************************************************************************************
 */
+
+/*Social Icons*/
+
+ul.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0 0 0;
+    color: pink;
+}
+.icons a{
+    color: #5E657A;
+}
+
+
+ul.icons li {
+    display: inline;-block;
+    padding: 0 15px 0 0;
+    vertical-align: middle;
+}
+
+ul.icons li:last-child {
+    padding-right: 0;
+}
+
+ul.icons li .icon:before {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 100%;
+/*    font-size: 40px;*/
+}
+
+ul.icons.alt li .icon:before {
+    -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    font-size: 14px;
+}
+
+ul.icons li a.icon:hover:before {
+    color: #192441;
+}
+
+ul.icons.alt li .icon:before {
+    box-shadow: inset 0 0 0 0.6px #BABDC6;
+}
+
+ul.icons.alt li a.icon:hover:before {
+    box-shadow: inset 0 0 0 1px #5E657A;
+}
+
+
 @media (min-width: 201px) and (max-width: 767px) {
     body {
         overflow-x: hidden;
